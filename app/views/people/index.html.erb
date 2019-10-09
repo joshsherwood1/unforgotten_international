@@ -1,0 +1,5 @@
+<h2>People</h2>
+<% @people.each do |person| %>
+<h3><%= person.name %></h3>
+  <img src="<%=person.picture%>"></img>
+<% end %>
