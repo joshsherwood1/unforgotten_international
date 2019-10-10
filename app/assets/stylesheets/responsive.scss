@@ -1,13 +1,50 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Slabo+13px&display=swap');
+
+
+
+@media all and (max-width: 1000px) { /* screen size until 500px */
+    h3 {
+        font-size: 0.8em; /* 0.8x default size */
+        font-family: 'Slabo 13px';
+        }
+    }
+
+@media all and (max-width: 1000px) { /* screen size until 500px */
+    a {
+        font-size: 0.8em; /* 0.8x default size */
+        font-family: 'Slabo 13px';
+        }
+    }
+
+@media all and (max-width: 8000px) { /* screen size until 500px */
+  a {
+      font-family: 'Slabo 13px';
+      }
+  }
 
 @media(min-width: $screen-sm-min) {
   header {
     h1, h2, h3, h4, h5, h6 {
-      max-width: 55%;
+      max-width: 15%;
+      font-family: 'Slabo 13px';
     }
   }
+
+// @media (max-width: @screen-xs) {
+//     body{font-size: 10px;}
+// }
+//
+// @media (max-width: @screen-sm) {
+//     body{font-size: 14px;}
+// }
+
+// h5{
+//     font-size: 1.4em;
+// }
 
   ul.actions {
     position: absolute;
