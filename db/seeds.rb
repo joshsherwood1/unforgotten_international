@@ -7,5 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Person.destroy_all
 Country.destroy_all
-@sherif = Person.create!(name: "Sherif Gaber", picture: "https://pbs.twimg.com/media/Co5LIYnXgAAL9HM?format=jpg&name=4096x4096")
-@raif = Person.create!(name: "Raif Badawi", picture: "https://pbs.twimg.com/media/D9Mek5gW4AIMiU1?format=jpg&name=900x900")
+@sherif = Person.create!(name: "Sherif Gaber", picture: "https://assets.change.org/photos/9/qa/im/XeQaimxHZnzlkXQ-800x450-noPad.jpg?1525574336")
+@raif = Person.create!(name: "Raif Badawi", picture: "https://ichef.bbci.co.uk/news/624/cpsprodpb/7D94/production/_91984123_b49301f0-1dab-4921-be9d-1f868e751ba0.jpg")
+@ali = Person.create!(name: "Ali-Mohammed al-Nimr", picture: "http://ichef.bbci.co.uk/news/976/cpsprodpb/280B/production/_85815201_afp_alnimr.jpg")
+@zelim = Person.create!(name: "Zelim Bakaev", picture: "https://queerty-prodweb.s3.amazonaws.com/2017/10/bakaev.jpg")
+@assil = Person.create!(name: "Assil Belalta", picture: "https://al-bab.com/sites/default/files/belalta-2.jpg")
+@channing = Person.create!(name: "Channing Smith", picture: "https://static01.nyt.com/images/2019/09/30/multimedia/30xp-tennessee/30xp-tennessee-articleLarge.jpg?quality=75&auto=webp&disable=upscale")
