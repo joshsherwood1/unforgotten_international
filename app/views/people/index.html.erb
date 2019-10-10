@@ -1,5 +1,14 @@
-<h2>People</h2>
+<h2 style="text-align: center">People</h2>
 <% @people.each do |person| %>
-<h3><%= person.name %></h3>
-  <img src="<%=person.picture%>"></img>
+
+<div class="row-fluid">
+  <div class="text-center col-xs-4">
+    <div class="mx-5">
+    <h3><%= person.name %></h3>
+    <img src="<%=person.picture%>"></img>
+    </div>
+  </div>
+</div>
+
+
 <% end %>
