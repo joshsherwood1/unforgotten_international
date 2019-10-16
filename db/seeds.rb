@@ -16,3 +16,6 @@ Country.destroy_all
 @assil = Person.create!(name: "Assil Belalta", picture: "https://al-bab.com/sites/default/files/belalta-2.jpg")
 @channing = Person.create!(name: "Channing Smith", picture: "https://static01.nyt.com/images/2019/09/30/multimedia/30xp-tennessee/30xp-tennessee-articleLarge.jpg?quality=75&auto=webp&disable=upscale")
 @shatha = Person.create!(name: "Shatha Salim Bashar", picture: "https://6f86a2a761cafb234bee-915fe82910fbc36b44e130293923f848.ssl.cf2.rackcdn.com/2019/09/shatha_salim_bashar_810x540.jpg")
+@omar = Person.create!(name: "Omar Alshogre", picture: "https://smp.vgc.no/v2/images/e3840506-f620-41df-b75b-58229a95fa83?fit=crop&h=1105&w=1900&s=e5a2173a5860ea4f4e7a28aa042dd2ca5ec796c7")
+@mazen_mezban = Person.create!(name: "Mazen & Mezban", picture: "https://media.npr.org/assets/img/2019/03/14/img_6160-2-660070df98423b5f183d89f91bd4300e7a02e02a-s1600-c85.jpg")
+@lars = Person.create!(name: "Lars Egge", picture: "https://cdn.vox-cdn.com/thumbor/JnTe43Y6HOOZ8R-r4k6MUR3s5ks=/0x442:1080x1350/1820x1213/filters:focal(345x615:517x787):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/55275819/outsports_1.0.jpg")
