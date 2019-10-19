@@ -12,8 +12,9 @@ data-toggle="button" aria-pressed="false" autocomplete="off" onclick = "window.l
 <div class="row-fluid">
   <div class="text-center col-sm-4"">
     <div class="mx-5">
-    <h3><%= person.name %></h3>
-    <img src="<%=person.picture%>"></img>
+    <h3><%=link_to person.name, "/people/#{person.id}" %></h3>
+    <a href = "/people/<%=person.id%>">
+    <img src="<%=person.picture%>"></img></a>
     </div>
   </div>
 </div>
