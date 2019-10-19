@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191008153756) do
+ActiveRecord::Schema.define(version: 20191018181346) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,6 +31,14 @@ ActiveRecord::Schema.define(version: 20191008153756) do
     t.string "picture"
   end
 
+  create_table "sources", force: :cascade do |t|
+    t.string "name"
+    t.string "url"
+    t.bigint "person_id"
+    t.index ["person_id"], name: "index_sources_on_person_id"
+  end
+
   add_foreign_key "country_people", "countries"
   add_foreign_key "country_people", "people"
+  add_foreign_key "sources", "people"
 end
