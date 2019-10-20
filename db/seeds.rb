@@ -65,3 +65,4 @@ Source.create!(name: "Raif Badawi Website", url: "https://www.raifbadawi.org/", 
 @vicky = Person.create!(name: "Vicky Beeching", picture: "https://www.gaystarnews.com/wp-content/uploads/2016/04/vicky_beeching_nicholas_dawkes.jpg")
 @vicky.sources.create!(name: "Independent Article", url: "https://www.independent.co.uk/news/people/news/vicky-beeching-star-of-the-christian-rock-scene-im-gay-god-loves-me-just-the-way-i-am-9667566.html")
 @vicky.sources.create!(name: "Vicky Beeching's Book", url: "https://www.amazon.com/dp/0062439901/ref=cm_sw_em_r_mt_dp_U_gaQQDbE8SBKTN")
+@ali.sources.create!(name: "Amnesty International Profile", url: "https://www.amnesty.org/en/latest/campaigns/2016/02/my-heart-is-exhausted-a-mothers-story-of-death-row-in-saudi-arabia/")
