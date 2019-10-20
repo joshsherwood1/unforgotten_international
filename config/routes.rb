@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root 'people#index'
   resources :people, only: [:index, :show]
   get "/about", to: "about#show"
+  get "/search", to: "search#index"
 end
