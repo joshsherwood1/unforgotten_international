@@ -29,6 +29,8 @@ ActiveRecord::Schema.define(version: 20191018181346) do
   create_table "people", force: :cascade do |t|
     t.string "name"
     t.string "picture"
+    t.string "summary"
+    t.string "bio"
   end
 
   create_table "sources", force: :cascade do |t|
