@@ -5,10 +5,12 @@
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://kit.fontawesome.com/671a6667b5.js" crossorigin="anonymous"></script>
+    <%= yield :og_header %>
+    <%= tag(:meta, property: "twitter:site", content: "@exceptiontrap") %>
   </head>
 
   <body>
@@ -28,6 +30,8 @@
      <form class="form-inline my-2 my-lg-0">
     <input class="form-control mr-sm-2" type="search" placeholder="Search" name="search[content]">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit" formaction="/search">Search</button>
+    <button type="button" class="btn btn-success"
+    data-toggle="button" aria-pressed="false" autocomplete="off" onclick = "window.location.href = '/person_of_the_day';"> Person of the Day </button>
    </nav>
   </topnav>
 
