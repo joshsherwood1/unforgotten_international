@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.5'
 gem "bootstrap-sass"
 gem 'jquery-rails'
 gem "font-awesome-rails", "~> 4.3"
+gem 'social-share-button'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
