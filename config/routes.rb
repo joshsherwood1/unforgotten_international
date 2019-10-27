@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :people, only: [:index, :show]
   get "/about", to: "about#show"
   get "/search", to: "search#index"
+  get "/person_of_the_day", to: "hero#show"
 end

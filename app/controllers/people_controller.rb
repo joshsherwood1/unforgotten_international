@@ -1,7 +1,7 @@
 class PeopleController <ApplicationController
 
   def index
-    @people = Person.all
+    @people = Person.all.shuffle
   end
 
   def show

@@ -1,5 +1,5 @@
 <div class="jumbotron">
-<h2>Supporting Atheists, LGBTQ People, & Critics of Authoritarianism/Fundamentalism</h2>
+<h2>Supporting Atheists, LGBTQ People & Critics of Authoritarianism/Fundamentalism</h2>
 <p>by telling their must-hear stories</p>
 ​
 <button type="button" class="btn btn-success"
@@ -8,13 +8,15 @@ data-toggle="button" aria-pressed="false" autocomplete="off" onclick = "window.l
 </div>
 
 <h2 style="text-align: center">People</h2>
+<br><br>
 <% @people.each do |person| %>
 <div class="row-fluid">
   <div class="text-center col-sm-4"">
     <div class="mx-5">
-    <h3><%=link_to person.name, "/people/#{person.id}" %></h3>
     <a href = "/people/<%=person.id%>">
-    <img src="<%=person.picture%>"></img></a>
+    <i class="<%=person.picture%> fa-4x" style="color: #51cf66;"></i></a>
+    <h2><%=link_to person.name, "/people/#{person.id}" %></h2>
+    <p style = "font-family: 'Source Sans Pro', sans-serif;"><%=person.summary%></p>
     </div>
   </div>
 </div>

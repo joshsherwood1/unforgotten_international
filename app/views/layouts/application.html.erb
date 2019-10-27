@@ -5,15 +5,18 @@
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://kit.fontawesome.com/671a6667b5.js" crossorigin="anonymous"></script>
+    <%= yield :og_header %>
+    <%= tag(:meta, property: "twitter:site", content: "@exceptiontrap") %>
   </head>
 
   <body>
   <topnav id="top-navbar">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <i class="fa fa-globe fa-4x fa-spin" style="color: #51cf66;"></i>
+    <i class="fa fa-globe fa-3x" style="color: #51cf66;"></i>
      <a class="navbar-brand" href="/" style="font-size: 30px">(un)forgotten international</a>
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
@@ -21,12 +24,14 @@
      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
        <ul class="navbar-nav">
          <a class="nav-item nav-link active" href="/people">All People <span class="sr-only">(current)</span></a>
-         <a class="nav-item nav-link active" href="/countries">All Countries</a>
+         <a class="nav-item nav-link active" href="/people">All Countries</a>
        </ul>
      </div>
      <form class="form-inline my-2 my-lg-0">
     <input class="form-control mr-sm-2" type="search" placeholder="Search" name="search[content]">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit" formaction="/search">Search</button>
+    <button type="button" class="btn btn-success"
+    data-toggle="button" aria-pressed="false" autocomplete="off" onclick = "window.location.href = '/person_of_the_day';"> Person of the Day </button>
    </nav>
   </topnav>
 
