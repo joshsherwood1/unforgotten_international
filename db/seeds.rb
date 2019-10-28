@@ -18,7 +18,7 @@ Country.destroy_all
 @channing = Person.create!(name: "Channing Smith", picture: "fas fa-mars-double", summary: "Bullied because he was gay and, as a result, died by suicide")
 @shatha = Person.create!(name: "Shatha Salim Bashar", picture: "fas fa-globe-europe", summary: "ISIS sex slave survivior")
 @omar = Person.create!(name: "Omar Alshogre", picture: "fab fa-rebel", summary: "Imprisoned and tortured in Syria for three years for criticising the dictatorship")
-@mazen_mezban = Person.create!(name: "Mazen & Mezban", picture: "fas fa-globe-europe", summary: "Yazidi kids kidnapped by ISIS and trained to be soldiers until they were rescued five years later")
+@mazen_mezban = Person.create!(name: "Mazen & Mezban", picture: "fas fa-globe-europe", summary: "Yazidi kids kidnapped by ISIS and trained to be soldiers until they were rescued years later")
 @lars = Person.create!(name: "Lars Egge", picture: "fas fa-mars-double", summary: "Yazidi kids kidnapped by ISIS and trained to be soldiers until they were rescued five years later")
 @jimmy_bangash = Person.create!(name: "Jimmy Bangash", picture: "fas fa-mars-double")
 @JunaidHafeez = Person.create!(name: "Junaid Hafeez", picture: "fas fa-dungeon")
