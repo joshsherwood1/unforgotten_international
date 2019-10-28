@@ -15,7 +15,7 @@ Country.destroy_all
 @kurdish_female_fighters = Person.create!(name: "Kurdish Female Fighters", picture: "fas fa-fighter-jet", summary: "Fighting for their freedom against ISIS and now Turkey")
 @zelim = Person.create!(name: "Zelim Bakaev", picture: "fas fa-mars-double", summary: "Missing since 2017 - kidnapped by Chechnyan authorities for allegedly being gay")
 @assil = Person.create!(name: "Assil Belalta", picture: "fas fa-mars-double", summary: "Murdered in Algeria because of his sexual orientation")
-@channing = Person.create!(name: "Channing Smith", picture: "fas fa-mars-double", summary: "Bullied because he was gay and died as a result in Tennessee")
+@channing = Person.create!(name: "Channing Smith", picture: "fas fa-mars-double", summary: "Bullied because he was gay and, as a result, died by suicide")
 @shatha = Person.create!(name: "Shatha Salim Bashar", picture: "fas fa-globe-europe", summary: "ISIS sex slave survivior")
 @omar = Person.create!(name: "Omar Alshogre", picture: "fab fa-rebel", summary: "Imprisoned and tortured in Syria for three years for criticising the dictatorship")
 @mazen_mezban = Person.create!(name: "Mazen & Mezban", picture: "fas fa-globe-europe", summary: "Yazidi kids kidnapped by ISIS and trained to be soldiers until they were rescued five years later")
