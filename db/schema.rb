@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20191018181346) do
     t.string "picture"
     t.string "summary"
     t.string "bio"
+    t.string "social_media"
   end
 
   create_table "sources", force: :cascade do |t|
