@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191018181346) do
+ActiveRecord::Schema.define(version: 20191029231853) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,12 +26,17 @@ ActiveRecord::Schema.define(version: 20191018181346) do
     t.index ["person_id"], name: "index_country_people_on_person_id"
   end
 
+  create_table "media", force: :cascade do |t|
+    t.string "embedded_html"
+    t.bigint "person_id"
+    t.index ["person_id"], name: "index_media_on_person_id"
+  end
+
   create_table "people", force: :cascade do |t|
     t.string "name"
     t.string "picture"
     t.string "summary"
     t.string "bio"
-    t.string "social_media"
   end
 
   create_table "sources", force: :cascade do |t|
@@ -43,5 +48,6 @@ ActiveRecord::Schema.define(version: 20191018181346) do
 
   add_foreign_key "country_people", "countries"
   add_foreign_key "country_people", "people"
+  add_foreign_key "media", "people"
   add_foreign_key "sources", "people"
 end
