@@ -26,8 +26,8 @@
   </div>
   <div class="col-sm-5 right">
     <br>
-    <% if @person.social_media != nil %>
-      <%= @person.social_media.html_safe %><div>
-    <% end %>
+      <% @person.medias.each do |media| %><div>
+        <%= media.embedded_html.html_safe %>
+      <% end %>
   </div>
 </div>

@@ -5,7 +5,6 @@ class CreatePerson < ActiveRecord::Migration[5.1]
       t.string :picture
       t.string :summary
       t.string :bio
-      t.string :social_media
     end
   end
 end
