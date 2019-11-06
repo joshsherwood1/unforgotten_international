@@ -1,25 +1,33 @@
+<div class="text-center">
+  <i class="<%=@person.picture%> fa-6x" style="color: #51cf66;"></i>
+</div>
 <h2 style="text-align: center"><%= @person.name %></h2>
 <br>
 
-<div class="row no-gutters bg-light position-relative">
-
-  <div class="col-md-6 mb-md-0 p-md-4">
-    <div style="font-size: 24px;">
-      <i class="<%=@person.picture%> fa-10x" style="color: #51cf66;"></i></a>
-    </div>
+<div class="bg-light position-relative">
+  <div class = "m-5">
+    <br>
+      <h3 class = "center"><%=@person.summary%></h3>
   </div>
-  <div class="col-md-6 position-static p-4 pl-md-0">
-    <h3 class="mt-0"></h3>
-    <p></p>
-    <a href="#" class="stretched-link"></a>
-  </div>
+  <hr class="style-two">
+  <br>
 </div>
 
-<%= social_share_button_tag(@person.name, :image => "https://www.google.com/search?q=snow&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi96NC8ubXlAhVGsp4KHZWUBN4Q_AUIEygC&biw=1440&bih=821#imgrc=l_31uELz3oH_NM", desc: "The summary of page", via: "MyTwitterName") %>
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Hero of the day, <%= @person.name %>: <%= @person.summary %>" data-lang="en" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<h2>Sources</h2>
-
-<h3><% @person.sources.each do |source| %></h3>
-<%= link_to source.name, source.url %>
-<br>
-<% end %>
+<div class="row-fluid">
+  <div class="col-sm-7 left">
+    <h2>Find out more:</h2>
+    <h3><% @person.sources.each do |source| %></h3>
+    <%= link_to source.name, source.url, target: :_blank %>
+    <br>
+    <% end %>
+    <br>
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="<%= @person.name %>" data-lang="en" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <br>
+  </div>
+  <div class="col-sm-5 right">
+    <br>
+      <% @person.medias.each do |media| %><div>
+        <%= media.embedded_html.html_safe %>
+      <% end %>
+  </div>
+</div>
