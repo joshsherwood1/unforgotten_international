@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Source.destroy_all
 Media.destroy_all
+Resource.destroy_all
 Person.destroy_all
 Country.destroy_all
 @sherif = Person.create!(name: "Sherif Gaber", picture: "fas fa-running", summary: "On the run in Egypt for criticising Islam and defending LGBTQ rights")
@@ -160,8 +161,24 @@ Source.create!(name: "Raif Badawi Website", url: "https://www.raifbadawi.org/", 
 @ahmed_alaa.sources.create!(name: "CBS 60 Minutes Interview", url: "https://www.cbsnews.com/news/rainbow-railroad-the-organization-saving-lgbt-citizens-from-hostile-governments-60-minutes-2019-05-19/?fbclid=IwAR2me-vSg9Knp81okDTSxGFKWSZuOxJI9YlK7HWfSaBdD-MXd3fIQC88hB0")
 @ahmed_alaa.medias.create!(embedded_html: "<iframe width='560' height='315' src='https://www.youtube-nocookie.com/embed/1CW2wNfwaCM' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" )
 
-
-
+@free = Resource.create!(name: "Free Hearts Free Minds", website_url: "https://www.freeheartsfreeminds.com/", summary: "Assists ex-Muslims in Islamic countries by offering mental health services and coaching")
+@rainbow = Resource.create!(name: "Rainbow Railroad", website_url: "https://www.rainbowrailroad.org/", summary: "Relocates LGBTQ people from countries where it is unsafe or illegal to be themselves")
+@rainbow.medias.create!(embedded_html: "<iframe width='560' height='315' src='https://www.youtube-nocookie.com/embed/jbfslCIQlE8' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>")
+@free.medias.create!(embedded_html: "<iframe width='560' height='315' src='https://www.youtube-nocookie.com/embed/tErnXK4DklQ' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>")
+@iraqi_couple = Person.create!(name: "Btoo Allami & Nayyef Hrebid", picture: "fas fa-mars-double", summary: "Two gay Iraqi soldiers who fell in love and escaped separately to the United States")
+@iraqi_couple.sources.create!(name: "CNN Article", url: "https://www.cnn.com/2017/10/07/us/iraq-gay-soldiers-love-story-seattle/index.html")
+@iraqi_couple.medias.create!(embedded_html: "<iframe width='560' height='315' src='https://www.youtube-nocookie.com/embed/l5T9Dq_xqdU' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" )
+@iraqi_couple.medias.create!(embedded_html: "<iframe width='560' height='315' src='https://www.youtube-nocookie.com/embed/3KMDaqNIzTw' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" )
+@xulhaz = Person.create!(name: "Xulhaz Mannan", picture: "fas fa-mars-double", summary: "Hacked to death in Bangladesh for being gay, founder of the first Bangladeshi LGBTQ magazine, and an outspoken advocate for LGBTQ rights")
+@xulhaz.sources.create!(name: "The Guardian Article", url: "https://www.theguardian.com/world/2016/apr/25/editor-bangladesh-first-lgbt-magazine-killed-reports-say-roopbaan")
+@xulhaz.sources.create!(name: "Xulhaz Mannan's LGBTQ online magazine", url: "https://roopbaan.org/about/")
+@xulhaz.sources.create!(name: "Amnesty International Profile", url: "https://www.amnesty.org/en/latest/news/2017/04/one-year-after-the-murders-of-xulhaz-mannan-and-mahbub-rabbi-tonoy/")
+@xulhaz.medias.create!(embedded_html: "<iframe width='560' height='315' src='https://www.youtube-nocookie.com/embed/oVnavmp9OO0' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" )
+@xulhaz.medias.create!(embedded_html: "<iframe width='560' height='315' src='https://www.youtube-nocookie.com/embed/ka7grHHKTe8' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" )
+@xulhaz.medias.create!(embedded_html: "<iframe width='560' height='315' src='https://www.youtube-nocookie.com/embed/Fk46wv0QdKA' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" )
+@xulhaz.medias.create!(embedded_html: "<iframe width='560' height='315' src='https://www.youtube-nocookie.com/embed/JVP1N43LzlA' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" )
+@xulhaz.medias.create!(embedded_html: "<iframe width='560' height='315' src='https://www.youtube-nocookie.com/embed/lRzE7YVm2V0' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" )
+@xulhaz.medias.create!(embedded_html: "<iframe width='560' height='315' src='https://www.youtube-nocookie.com/embed/QKRyxUHGSsc' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" )
 
 
 
