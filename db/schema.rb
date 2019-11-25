@@ -28,6 +28,8 @@ ActiveRecord::Schema.define(version: 20191106214030) do
 
   create_table "media", force: :cascade do |t|
     t.string "embedded_html"
+    t.boolean "main", default: false
+    t.boolean "main2", default: false
     t.bigint "person_id"
     t.bigint "resource_id"
     t.index ["person_id"], name: "index_media_on_person_id"
