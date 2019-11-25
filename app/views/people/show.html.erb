@@ -4,6 +4,13 @@
 <h2 style="text-align: center"><%= @person.name %></h2>
 <br>
 
+<div style="text-align: center">
+  <% @main_medias.each do |media| %>
+    <%= media.embedded_html.html_safe %>
+  <% end %>
+</div>
+
+<br>
 <div class="bg-light position-relative">
   <div class = "m-5">
     <br>
@@ -26,7 +33,7 @@
   </div>
   <div class="col-sm-5 right">
     <br>
-      <% @person.medias.each do |media| %><div>
+      <% @person.medias.where(main: false, main2: false).each do |media| %><div>
         <%= media.embedded_html.html_safe %>
       <% end %>
   </div>
