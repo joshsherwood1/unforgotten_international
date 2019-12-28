@@ -14,13 +14,13 @@
 
         video.bind("play", function() {
 
-          analytics.track({
-          "event": "Play",
-          "properties": {
-            "category": 'Video',
-            "label": `${video.name()}`
+          analytics.track("Play", {
+          properties: {
+            category: 'Video',
+            label: `${video.name()}`
           },
-          "integrations": {"Amplitude": false }
+          integrations: {'Amplitude': false,
+                          'Mixpanel': false}
         })
         });
 
