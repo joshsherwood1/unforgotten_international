@@ -19,10 +19,7 @@
           properties: {
             category: 'Video',
             label: `${video.name()}`
-          },
-          integrations: {'Amplitude': false,
-                          'Mixpanel': false}
-        })
+          }
         });
 
         video.bind("end", function() {
