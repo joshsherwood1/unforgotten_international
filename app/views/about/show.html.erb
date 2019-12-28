@@ -14,7 +14,8 @@
 
         video.bind("play", function() {
 
-          analytics.track("Play", {
+          analytics.track({
+          event: "Play",
           properties: {
             category: 'Video',
             label: `${video.name()}`
