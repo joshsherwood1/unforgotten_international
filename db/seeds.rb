@@ -59,7 +59,7 @@ Country.destroy_all
 @asia = Person.create!(name: "Asia Bibi", picture: "fas fa-bible", summary: 'Christian Pakastani woman who spent eight years on death row for allegedly criticising Islam')
 @asia.sources.create!(name: "New York Time Article", url: "https://www.nytimes.com/2019/05/08/world/asia/asia-bibi-blasphemy-pakistan-canada.html")
 @Nathan_Dalley = Person.create!(name: "Nathan Dalley", picture: "fas fa-mars-double", summary: 'Survived gay conversion therary and a suicide attempt and is campaigning to end gay conversion therapy for minors in Utah')
-@Nathan_Dalley.sources.create!(name: "Daily Utah Chronicle", url: "https://dailyutahchronicle.com/2019/04/05/he-survived-conversion-therapy-now-he-wants-to-make-sure-no-one-else-has-to/")
+@Nathan_Dalley.sources.create!(name: "Daily Utah Chronicle Article", url: "https://dailyutahchronicle.com/2019/04/05/he-survived-conversion-therapy-now-he-wants-to-make-sure-no-one-else-has-to/")
 # @shurka = Person.create!(name: "Mathew Shurka", picture: "fas fa-mars-double", summary: 'Survived gay conversion therary and is campaigning to end gay conversion therapy')
 # @shurka.sources.create!(name: "MTV News Article", url: "http://www.mtv.com/news/2031013/gay-conversion-therapy-dangers-matthew-shurka/")
 @garrard = Person.create!(name: "Garrard Conley", picture: "fas fa-mars-double", summary: "Survived conservative Christian gay conversion therapy, documented in the movie Boy Erased")
