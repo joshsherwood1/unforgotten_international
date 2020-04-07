@@ -24,7 +24,7 @@
   <div class="col-sm-7 left">
     <h2>Find out more:</h2>
     <h3><% @person.sources.each do |source| %></h3>
-    <%= link_to source.name, source.url, target: :_blank %>
+    <%= link_to source.name, source.url%>
     <br>
     <% end %>
     <br>
