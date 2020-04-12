@@ -159,7 +159,7 @@ Media.create!(person_id: @assil.id, embedded_html: "<blockquote class='twitter-t
 @ahmed_alaa.sources.create!(name: "CBS 60 Minutes Interview", url: "https://www.cbsnews.com/news/rainbow-railroad-the-organization-saving-lgbt-citizens-from-hostile-governments-60-minutes-2019-05-19/?fbclid=IwAR2me-vSg9Knp81okDTSxGFKWSZuOxJI9YlK7HWfSaBdD-MXd3fIQC88hB0")
 @ahmed_alaa.medias.create!(embedded_html: "<iframe width='560' height='315' src='https://www.youtube-nocookie.com/embed/1CW2wNfwaCM' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>", main2: true)
 
-@free = Resource.create!(name: "Free Hearts Free Minds", website_url: "https://www.freeheartsfreeminds.com/", summary: "Assists ex-Muslims in Islamic countries by offering mental health services and coaching")
+@free = Resource.create!(name: "Free Hearts Free Minds", website_url: "https://www.freeheartsfreeminds.com/", summary: "Assists ex-Muslim atheists in Islamic countries by offering mental health services and coaching")
 @rainbow = Resource.create!(name: "Rainbow Railroad", website_url: "https://www.rainbowrailroad.org/", summary: "Relocates LGBTQ people from countries where it is unsafe or illegal to be themselves")
 @rainbow.medias.create!(embedded_html: "<iframe width='560' height='315' src='https://www.youtube-nocookie.com/embed/jbfslCIQlE8' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>")
 @free.medias.create!(embedded_html: "<iframe width='560' height='315' src='https://www.youtube-nocookie.com/embed/tErnXK4DklQ' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>")
