@@ -7,6 +7,8 @@ data-toggle="button" aria-pressed="false" autocomplete="off" onclick = "window.l
 ​
 </div>
 
+<%= audio_tag "ctii.mp3", id: "sound", autoplay: true, controls: true %>
+
 <h2 style="text-align: center">Heroes</h2>
 <br><br>
 <% @people.each do |person| %>
