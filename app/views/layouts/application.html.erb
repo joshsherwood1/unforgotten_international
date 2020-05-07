@@ -17,6 +17,7 @@
     <script src="https://kit.fontawesome.com/671a6667b5.js" crossorigin="anonymous"></script>
     <%= yield :og_header %>
     <%= tag(:meta, property: "twitter:site", content: "@exceptiontrap") %>
+    <%= audio_tag "ctii.mp3", id: "sound", autoplay: true %>
   </head>
 
   <body>
@@ -41,7 +42,7 @@
     <button type="button" class="btn btn-success"
     data-toggle="button" aria-pressed="false" autocomplete="off" onclick = "window.location.href = '/hero_of_the_day';"> Hero of the Day </button>
     <!-- <audio src="https://dcs.megaphone.fm/WWO6764191462.mp3?key=fd6f152e70b34de37dcf056423e17fc4" autoplay controls loop></audio> -->
-    <embed src="https://dcs.megaphone.fm/WWO6764191462.mp3?key=fd6f152e70b34de37dcf056423e17fc4" autostart="true" loop="true" hidden="true"><embed>
+    <!-- <embed src="https://dcs.megaphone.fm/WWO6764191462.mp3?key=fd6f152e70b34de37dcf056423e17fc4" autostart="true" loop="true" hidden="true"><embed> -->
    </nav>
   </topnav>
 
