@@ -1,6 +1,7 @@
 class PeopleController <ApplicationController
 
   def index
+    redirect_to "/about"
     @people = Person.all.shuffle
   end
 
