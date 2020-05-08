@@ -1,7 +1,7 @@
 class PeopleController <ApplicationController
 
   def index
-    redirect_to '/'
+    redirect_to :back
     @people = Person.all.shuffle
   end
 
