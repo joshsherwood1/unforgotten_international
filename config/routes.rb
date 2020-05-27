@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get "/search", to: "search#index"
   get "/hero_of_the_day", to: "hero#show"
   get "/resources", to: "resources#index"
+  get "/map", to: "map#index"
 end

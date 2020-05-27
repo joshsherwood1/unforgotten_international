@@ -94,9 +94,34 @@ review {
  font-size: 18px;
 }
 
+.padding-0{
+    padding-right:2;
+    padding-left:2;
+}
+
+#north_america:hover {
+   background-image: url('');
+}
+
+#full-width {
+  height: 100%;
+  width: 500px;
+}
+
 #top-navbar {
   margin-bottom: 20px;
   font-size: 20px;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 #footer {
@@ -121,6 +146,21 @@ review {
   margin-right: auto;
   margin-top: 5rem;
   width: 10%;
+}
+
+#flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1fr;
+  row-gap: 2px;
+}
+
+#flexbox > div {
+  border: 1px solid green;
+  background-color: lime;
+  flex: 1 1 auto;
+  width: 700px;
+  height: 200px;
 }
 
 #checkout-button {
@@ -165,6 +205,13 @@ review {
  	grid-template-columns: repeat(3,1fr);
  	grid-template-rows: auto;
  	grid-gap: 30px;
+ }
+
+ .grid-container2{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   grid-template-rows: auto;
+   grid-gap: 3px 3px;
  }
 
  .grid-item{
@@ -265,4 +312,8 @@ hr.style-two {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.griditem22 {
+ justify-self: end;
 }
