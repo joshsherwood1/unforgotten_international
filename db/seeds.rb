@@ -218,3 +218,19 @@ Media.create!(person_id: @assil.id, embedded_html: "<blockquote class='twitter-t
 @yelena = Person.create!(name: "Yelena Grigoryeva", picture: "fas fa-fist-raised", summary: "Killed in Russia for being an outspoken LGBTQ activist")
 @yelena.sources.create!(name: "NPR Article", url: "https://www.npr.org/2019/07/23/744420960/russian-lgbt-activist-is-found-dead-friends-say-she-was-threatened")
 @yelena.medias.create!(embedded_html: "<iframe width='560' height='315' src='https://www.youtube-nocookie.com/embed/90UA0SVRtOI' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>", main2: true)
+
+@aliyouseni = Person.create!(name: "Amirhossein Moradi & Ali Younesi", picture: "fas fa-dungeon", summary: "Imprisoned in Iran for dissenting with the views of the regime")
+@aliyouseni.sources.create!(name: "Human Rights Watch Article", url: "https://www.hrw.org/news/2020/06/06/iran-free-students-long-solitary")
+@aliyouseni.medias.create!(embedded_html: "<iframe width='560' height='315' src='https://www.youtube-nocookie.com/embed/XhdrTiR7jzw' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>", main2: true)
+
+@rana = Person.create!(name: "Rana Ahmad", picture: "fas fa-atom", summary: "Risked her life when she became atheist in Saudia Arabia and fled to Germany")
+@rana.sources.create!(name: "New Statesman Article", url: "https://www.newstatesman.com/world/middle-east/2019/08/lonely-atheist-why-renouncing-your-religion-saudi-arabia-can-be-deadly")
+@rana.medias.create!(embedded_html: "<iframe width='560' height='315' src='https://www.youtube-nocookie.com/embed/_zncB6hngZg' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>", main2: true)
+
+@avijit = Person.create!(name: "Avijit Roy", picture: "fas fa-atom", summary: "American blogger hacked to death in Bangladesh for promoting atheism and secularism")
+@avijit.sources.create!(name: "BBC Article", url: "https://www.bbc.com/news/world-asia-31656222")
+@avijit.medias.create!(embedded_html: "<iframe width='560' height='315' src='https://www.youtube-nocookie.com/embed/HyXOtaHKZ80' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>", main2: true)
+
+@washiqur = Person.create!(name: "Washiqur Rahman", picture: "fas fa-atom", summary: "Bangladeshi blogger hacked to death for criticising Islam")
+@washiqur.sources.create!(name: "CNN Article", url: "https://www.cnn.com/2015/03/31/asia/bangladesh-blogger-death/index.html")
+@washiqur.medias.create!(embedded_html: "<iframe width='560' height='315' src='https://www.youtube-nocookie.com/embed/gxfUohRHXh4' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>", main2: true)
